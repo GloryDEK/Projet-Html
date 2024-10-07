@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-height: 100vh;
+    background: url(/Projet2/Images/pngtree-colorful-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+    background-color: rgba(121, 52, 100, 0.589);
+    width: 100%;
+
+}
+
+.nav{
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 20px; /* Espacement entre les éléments de la nav */
+}
+
+.content {
+    display: flex;
+    margin-top: 150px; /* Espace pour le header fixe */
+    padding: 20px;
+}
+
+section {
+    flex: 1; /* Prend l'espace restant */
+    padding: 20px;
+}
+
+aside {
+    width: 300px; /* Largeur fixe pour l'image */
+    padding-left: 20px; /* Espace entre le contenu et l'image */
+}
+
+aside img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas son conteneur */
+    height: auto; /* Garde le ratio de l'image */
+}
